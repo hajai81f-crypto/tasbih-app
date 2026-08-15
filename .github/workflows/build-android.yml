@@ -38,6 +38,10 @@ jobs:
       - name: Sync Capacitor
         run: npx cap sync android
 
+      - name: Add AdMob Application ID to manifest
+        run: |
+          sed -i '/<\/application>/i\        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9756891557211625~8153570143"/>' android/app/src/main/AndroidManifest.xml
+
       - name: Grant execute permission for gradlew
         run: chmod +x android/gradlew
 
