@@ -1,0 +1,11 @@
+{
+  "appId": "com.tasbih.app",
+  "appName": "سُبحان",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "AdMob": {
+      "appId": "ca-app-pub-9756891557211625~8153570143"
+    }
+  }
+}
